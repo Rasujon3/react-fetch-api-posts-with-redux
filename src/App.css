@@ -13,6 +13,30 @@
   }
 }
 
+section {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+}
+
+article {
+  background-color: #293462;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* smartphone */
+@media (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
